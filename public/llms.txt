@@ -4,14 +4,14 @@ Nowoczesne centrum obróbki wodą w Niedomicach k. Tarnowa. Oferujemy precyzyjne
 
 ## Strony
 
-- Strona główna: https://michalgazda.github.io/high-press.pl/
-- Usługi: https://michalgazda.github.io/high-press.pl/uslugi/
-- Technologia: https://michalgazda.github.io/high-press.pl/technologia/
-- Wyceny: https://michalgazda.github.io/high-press.pl/wyceny/
-- Rozety: https://michalgazda.github.io/high-press.pl/rozety/
-- Realizacje 2D: https://michalgazda.github.io/high-press.pl/realizacje-2d/
-- Realizacje 3D: https://michalgazda.github.io/high-press.pl/realizacje-3d/
-- Kontakt: https://michalgazda.github.io/high-press.pl/kontakt/
+- Strona główna: https://michalgazda.github.io/high-pres.pl/
+- Usługi: https://michalgazda.github.io/high-pres.pl/uslugi/
+- Technologia: https://michalgazda.github.io/high-pres.pl/technologia/
+- Wyceny: https://michalgazda.github.io/high-pres.pl/wyceny/
+- Rozety: https://michalgazda.github.io/high-pres.pl/rozety/
+- Realizacje 2D: https://michalgazda.github.io/high-pres.pl/realizacje-2d/
+- Realizacje 3D: https://michalgazda.github.io/high-pres.pl/realizacje-3d/
+- Kontakt: https://michalgazda.github.io/high-pres.pl/kontakt/
 
 ## Podstawowe informacje
 
