@@ -1,0 +1,141 @@
+---
+// Base Layout — shared shell for high-pres.pl site
+const base = import.meta.env.BASE_URL;
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  image?: string;
+  noindex?: boolean;
+}
+
+const { title, description, canonical, image, noindex } = Astro.props;
+const ogImage = image || `${base}images/hero-bg-1024x366-1.jpg`;
+const fullSite = 'https://michalgazda.github.io';
+const origin = Astro.site.origin;
+
+const links = [
+  { href: '/', label: 'Strona główna' },
+  { href: '/technologia/', label: 'Technologia' },
+  { href: '/rozety/', label: 'Rozety' },
+  { href: '/realizacje-3d/', label: 'Realizacje 3D' },
+  { href: '/realizacje-2d/', label: 'Realizacje 2D' },
+  { href: '/uslugi/', label: 'Usługi' },
+  { href: '/wyceny/', label: 'Wyceny' },
+  { href: '/kontakt/', label: 'Kontakt' },
+];
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical || `${fullSite}${base}${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical || `${fullSite}${base}${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} />
+  <meta property="og:image" content={`${fullSite}${ogImage}`} />
+  <meta property="og:locale" content="pl_PL" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={`${fullSite}${ogImage}`} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  <link rel="icon" type="image/png" href={`${base}images/favicon.png`} />
+  <link rel="stylesheet" href={`${base}styles/global.css`} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "name": "HIGH PRES & MACH — Centrum Obróbki Wodą",
+    "description": "Precyzyjne cięcie wodą - usługi cięcia i obróbki materiałów za pomocą nowoczesnego abradżetu. Cięcie 2D i 3D metali, kamienia, szkła i tworzyw.",
+    "url": fullSite + base,
+    "telephone": "+48 575 794 482",
+    "email": "biuro@high-pres.pl",
+    "image": fullSite + base + "images/hero-bg-1024x366-1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Kolejowa 10",
+      "postalCode": "33-132",
+      "addressLocality": "Niedomice",
+      "addressRegion": "małopolskie",
+      "addressCountry": "PL"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:30",
+      "closes": "16:30"
+    },
+    "areaServed": ["Tarnów", "Małopolska", "Polska"],
+    "priceRange": "$$",
+    "sameAs": []
+  })} />
+</head>
+<body>
+  <!-- Holiday/break notice bar -->
+  <div id="holiday-notice" class="holiday-bar" style="display:none">
+    <div class="container">
+      <span id="holiday-text"></span>
+      <button id="holiday-close" aria-label="Zamknij">✕</button>
+    </div>
+  </div>
+
+  <header>
+    <nav class="nav">
+      <a class="brand" href={base}>
+        <span class="brand-accent">HIGH PRES</span> <span class="brand-light">& MACH</span>
+      </a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <div class="nav-links">
+        {links.map((l) => (
+          <a href={base + l.href.slice(1)}>{l.label}</a>
+        ))}
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>HIGH PRES & MACH</h4>
+        <p>Centrum Obróbki Wodą<br />ul. Kolejowa 10, 33-132 Niedomice</p>
+        <p>
+          tel. <a href="tel:+48575794482">575 794 482</a> / <a href="tel:+48146575050">14 657 50 50</a><br />
+          <a href="mailto:biuro@high-pres.pl">biuro@high-pres.pl</a>
+        </p>
+      </div>
+      <div>
+        <h4>Godziny otwarcia</h4>
+        <p>Pon–Pt: 7:30 – 16:30</p>
+      </div>
+      <div>
+        <h4>Strony</h4>
+        <a href="https://high-pres.pl">high-pres.pl</a> &middot; <a href="https://www.mach24.pl">mach24.pl</a>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          {links.map((l) => (
+            <li><a href={base + l.href.slice(1)}>{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© {new Date().getFullYear()} HIGH PRES & MACH. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </footer>
+
+  <script is:inline src={`${base}scripts/holiday.js`}></script>
+  <script is:inline src={`${base}scripts/main.js`}></script>
+</body>
+</html>

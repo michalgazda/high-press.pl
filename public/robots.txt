@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://michalgazda.github.io/high-pres.pl/sitemap.xml

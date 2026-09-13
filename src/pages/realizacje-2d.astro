@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { realizacje2d } from "../data/galleries";
+const base = import.meta.env.BASE_URL;
+const imgPath = 'https://high-pres.pl/wp-content/uploads/2025/07/';
+---
+
+<BaseLayout
+  title="Realizacje cięcia 2D — HIGH PRES & MACH"
+  description="Galeria realizacji cięcia wodą 2D — detale płaskie, profile, wykroje. Zobacz przykłady naszych prac w stali, aluminium, kamieniu i innych materiałach."
+  canonical="https://michalgazda.github.io/high-pres.pl/realizacje-2d/"
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Realizacje 2D</h1>
+      <p>Galeria naszych prac — cięcie płaskie</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="lightbox" class="lightbox">
+        <button class="lb-close" id="lb-close">&times;</button>
+        <div class="lb-nav">
+          <button id="lb-prev">‹</button>
+          <button id="lb-next">›</button>
+        </div>
+        <img id="lb-img" src="" alt="Podgląd realizacji" />
+      </div>
+
+      <div data-gallery class="gallery-grid">
+        {realizacje2d.map((f) => (
+          <a href={imgPath + f} title="Realizacja 2D">
+            <img src={imgPath + f} alt="Cięcie wodą 2D — realizacja" loading="lazy" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

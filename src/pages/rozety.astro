@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { rozetyData } from "../data/galleries";
+const base = import.meta.env.BASE_URL;
+const imgPath = 'https://high-pres.pl/wp-content/uploads/2025/07/';
+
+const seriesLabels = {
+  RIR: 'Rozety Inne Ręcznie',
+  RNG: 'Rozety Nowe Gładkie',
+  ROP: 'Rozety Ozdobne',
+  RPA: 'Rozety Plastikowe',
+};
+function seriesLabel(f) {
+  const prefix = f.substring(0, 3);
+  return seriesLabels[prefix] || f;
+}
+---
+
+<BaseLayout
+  title="Rozety cięte wodą — HIGH PRES & MACH"
+  description="Galeria rozet dekoracyjnych wykonanych cięciem wodnym. Rozety ręcznie robione, gładkie, ozdobne i plastikowe — różne wzory i style do wyboru."
+  canonical="https://michalgazda.github.io/high-pres.pl/rozety/"
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Rozety</h1>
+      <p>Dekoracyjne rozety wykonane cięciem wodą — różnorodne wzory i style</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="lightbox" class="lightbox">
+        <button class="lb-close" id="lb-close">&times;</button>
+        <div class="lb-nav">
+          <button id="lb-prev">‹</button>
+          <button id="lb-next">›</button>
+        </div>
+        <img id="lb-img" src="" alt="Podgląd rozety" />
+      </div>
+
+      <!-- RIR - Rozety Inne Ręcznie -->
+      {(() => {
+        const groups = rozetyData;
+        return groups.map((group, gi) => {
+          const prefix = group[0].substring(0, 3);
+          return (
+            <div style="margin-bottom:48px">
+              <h3 style="margin-bottom:16px;font-size:1.1rem">{seriesLabel(group[0])} — seria {prefix.slice(3)}</h3>
+              <div data-gallery id={"g-"+gi} class="gallery-grid">
+                {group.map((f) => (
+                  <a href={imgPath + f} title="Rozeta dekoracyjna cięta wodą">
+                    <img src={imgPath + f} alt="Rozeta dekoracyjna" loading="lazy" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        });
+      })()}
+    </div>
+  </section>
+</BaseLayout>

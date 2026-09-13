@@ -1,0 +1,72 @@
+// Gallery pages data
+export const realizacje2d = [
+  '20181128_154659-scaled.jpg',
+  'IMG_20190131_115821-scaled.jpg',
+  'IMG_20190131_115837-scaled.jpg',
+  'IMG_20190131_115840-scaled.jpg',
+  '20181026_123611-2-scaled.jpg',
+  'me_956-.jpg', 'me_957-.jpg', 'me_958-.jpg', 'me_959-.jpg', 'me_960-.jpg',
+  'me_961-.jpg', 'me_962-.jpg', 'me_964-.jpg', 'me_965-.jpg', 'me_966-.jpg',
+  'me_967-.jpg', 'me_968-.jpg', 'me_972-_tn.jpg', 'me_973-.jpg', 'me_974-.jpg',
+  'me_975-.jpg', 'me_976-.jpg', 'me_977-.jpg', 'me_978-.jpg', 'me_979-.jpg',
+  'me_980-.jpg', 'me_986-.jpg', 'me_987-.jpg', 'me_988-.jpg', 'me_989-.jpg',
+  'me_991-.jpg', 'me_992-.jpg', 'me_994-.jpg', 'me_995-.jpg', 'me_998-.jpg',
+  'me_999-.jpg',
+  'wr_01-.jpg', 'wr_02-.jpg', 'wr_03-.jpg', 'wr_04-.jpg', 'wr_05-.jpg',
+  'wr_06-.jpg', 'wr_07-.jpg', 'wr_08-.jpg', 'wr_09-.jpg', 'wr_10-.jpg',
+  'wr_11-.jpg', 'wr_12-.jpg', 'wr_13-.jpg', 'wr_14-.jpg', 'wr_15-.jpg',
+  'wr_16-.jpg', 'wr_17-.jpg', 'wr_18-.jpg', 'wr_19-.jpg', 'wr_20-.jpg',
+  'wr_21-.jpg', 'wr_22-.jpg', 'wr_23-.jpg', 'wr_24-.jpg', 'wr_25-.jpg',
+  'wr_26-.jpg', 'wr_27-.jpg', 'wr_28-.jpg',
+];
+
+export const realizacje3d = [
+  'P1030374.jpg',
+  'P1030375.jpg', 'P1030376.jpg', 'P1030377.jpg', 'P1030378.jpg',
+  'P1030379.jpg', 'P1030380.jpg', 'P1030381.jpg', 'P1030382.jpg',
+  'P1030383.jpg', 'P1030384.jpg', 'P1030385.jpg', 'P1030386.jpg',
+  'me_993-.jpg', 'me_996-.jpg', 'me_997-.jpg',
+];
+
+export const rozetyData = [
+  // RIR - Rozety Inne Ręcznie
+  ['RIR03-1_tn.jpg','RIR03-2_tn.jpg','RIR03-3_tn.jpg','RIR03-4_tn.jpg'],
+  ['RIR04-1_tn.jpg','RIR04-2_tn.jpg','RIR04-3_tn.jpg','RIR04-4_tn.jpg'],
+  ['RIR05-1_tn.jpg','RIR05-2_tn.jpg','RIR05-3_tn.jpg','RIR05-4_tn.jpg'],
+  ['RIR06-1_tn.jpg','RIR06-2_tn.jpg','RIR06-3_tn.jpg','RIR06-4_tn.jpg'],
+  ['RIR07-1_tn.jpg','RIR07-2_tn.jpg','RIR07-3_tn.jpg','RIR07-4_tn.jpg'],
+  ['RIR08-1_tn.jpg','RIR08-2_tn.jpg','RIR08-3_tn.jpg','RIR08-4_tn.jpg'],
+  ['RIR09-1_tn.jpg','RIR09-2_tn.jpg','RIR09-3_tn.jpg','RIR09-4_tn.jpg'],
+  ['RIR10-1_tn.jpg','RIR10-2_tn.jpg','RIR10-3_tn.jpg','RIR10-4_tn.jpg'],
+  ['RIR11-1_tn.jpg','RIR11-2_tn.jpg','RIR11-3_tn.jpg','RIR11-4_tn.jpg'],
+  // RNG - Rozety Nowe Gładkie
+  ['RNG03-1_tn.jpg','RNG03-2_tn.jpg','RNG03-3_tn.jpg','RNG03-4_tn.jpg'],
+  ['RNG04-1_tn.jpg','RNG04-2_tn.jpg','RNG04-3_tn.jpg','RNG04-4_tn.jpg'],
+  ['RNG05-1_tn.jpg','RNG05-2_tn.jpg','RNG05-3_tn.jpg','RNG05-4_tn.jpg'],
+  ['RNG06-1_tn.jpg','RNG06-2_tn.jpg','RNG06-3_tn.jpg','RNG06-4_tn.jpg'],
+  ['RNG07-1_tn.jpg','RNG07-2_tn.jpg','RNG07-3_tn.jpg','RNG07-4_tn.jpg'],
+  ['RNG08-1_tn.jpg','RNG08-2_tn.jpg','RNG08-3_tn.jpg','RNG08-4_tn.jpg'],
+  ['RNG09-1_tn.jpg','RNG09-2_tn.jpg','RNG09-3_tn.jpg','RNG09-4_tn.jpg'],
+  ['RNG10-1_tn.jpg','RNG10-2_tn.jpg','RNG10-3_tn.jpg','RNG10-4_tn.jpg'],
+  ['RNG11-1_tn.jpg','RNG11-2_tn.jpg','RNG11-3_tn.jpg','RNG11-4_tn.jpg'],
+  // ROP - Rozety Ozdobne
+  ['ROP03-1_tn.jpg','ROP03-2_tn.jpg','ROP03-3_tn.jpg','ROP03-4_tn.jpg'],
+  ['ROP04-1_tn.jpg','ROP04-2_tn.jpg','ROP04-3_tn.jpg','ROP04-4_tn.jpg'],
+  ['ROP05-1_tn.jpg','ROP05-2_tn.jpg','ROP05-3_tn.jpg','ROP05-4_tn.jpg'],
+  ['ROP06-1_tn.jpg','ROP06-2_tn.jpg','ROP06-3_tn.jpg','ROP06-4_tn.jpg'],
+  ['ROP07-1_tn.jpg','ROP07-2_tn.jpg','ROP07-3_tn.jpg','ROP07-4_tn.jpg'],
+  ['ROP08-1_tn.jpg','ROP08-2_tn.jpg','ROP08-3_tn.jpg','ROP08-4_tn.jpg'],
+  ['ROP09-1_tn.jpg','ROP09-2_tn.jpg','ROP09-3_tn.jpg','ROP09-4_tn.jpg'],
+  ['ROP10-1_tn.jpg','ROP10-2_tn.jpg','ROP10-3_tn.jpg','ROP10-4_tn.jpg'],
+  ['ROP11-1_tn.jpg','ROP11-2_tn.jpg','ROP11-3_tn.jpg','ROP11-4_tn.jpg'],
+  // RPA - Rozety Plastikowe
+  ['RPA03-1_tn.jpg','RPA03-2_tn.jpg','RPA03-3_tn.jpg','RPA03-4_tn.jpg'],
+  ['RPA04-1_tn.jpg','RPA04-2_tn.jpg','RPA04-3_tn.jpg','RPA04-4_tn.jpg'],
+  ['RPA05-1_tn.jpg','RPA05-2_tn.jpg','RPA05-3_tn.jpg','RPA05-4_tn.jpg'],
+  ['RPA06-1_tn.jpg','RPA06-2_tn.jpg','RPA06-3_tn.jpg','RPA06-4_tn.jpg'],
+  ['RPA07-1_tn.jpg','RPA07-2_tn.jpg','RPA07-3_tn.jpg','RPA07-4_tn.jpg'],
+  ['RPA08-1_tn.jpg','RPA08-2_tn.jpg','RPA08-3_tn.jpg','RPA08-4_tn.jpg'],
+  ['RPA09-1_tn.jpg','RPA09-2_tn.jpg','RPA09-3_tn.jpg','RPA09-4_tn.jpg'],
+  ['RPA10-1_tn.jpg','RPA10-2_tn.jpg','RPA10-3_tn.jpg','RPA10-4_tn.jpg'],
+  ['RPA11-1_tn.jpg','RPA11-2_tn.jpg','RPA11-3_tn.jpg','RPA11-4_tn.jpg'],
+];

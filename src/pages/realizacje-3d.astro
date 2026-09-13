@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { realizacje3d } from "../data/galleries";
+const base = import.meta.env.BASE_URL;
+const imgPath = 'https://high-pres.pl/wp-content/uploads/2025/07/';
+---
+
+<BaseLayout
+  title="Realizacje cięcia 3D — HIGH PRES & MACH"
+  description="Galeria realizacji cięcia wodą 3D — fazowanie, stożki do 59°. Jako nieliczni w Małopolsce oferujemy cięcie 3D. Zobacz nasze projekty."
+  canonical="https://michalgazda.github.io/high-pres.pl/realizacje-3d/"
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Realizacje 3D</h1>
+      <p>Galeria naszych prac — cięcie przestrzenne</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="lightbox" class="lightbox">
+        <button class="lb-close" id="lb-close">&times;</button>
+        <div class="lb-nav">
+          <button id="lb-prev">‹</button>
+          <button id="lb-next">›</button>
+        </div>
+        <img id="lb-img" src="" alt="Podgląd realizacji" />
+      </div>
+
+      <div data-gallery class="gallery-grid">
+        {realizacje3d.map((f) => (
+          <a href={imgPath + f} title="Realizacja 3D">
+            <img src={imgPath + f} alt="Cięcie wodą 3D — realizacja" loading="lazy" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

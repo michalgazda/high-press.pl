@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const fullSite = 'https://michalgazda.github.io';
+---
+
+<BaseLayout
+  title="HIGH PRES & MACH — Precyzyjne cięcie wodą | Tarnowskie Centrum Obróbki Wodą"
+  description="Centrum obróbki wodą HIGH PRES & MACH w Niedomicach k. Tarnowa. Oferujemy precyzyjne cięcie wodą 2D i 3D metali, kamienia, szkła i tworzyw. Zapraszamy do kontaktu."
+  canonical="https://michalgazda.github.io/high-pres.pl/"
+>
+  <!-- Hero -->
+  <section class="hero">
+    <img src={`${base}images/hero-bg-1024x366-1.jpg`} alt="" class="hero-bg" aria-hidden="true" />
+    <div class="container hero-content">
+      <h1>Precyzyjne cięcie wodą<br />dla Twojego biznesu</h1>
+      <p>Oferujemy innowacyjne rozwiązania w obróbce materiałów, skupiając się na precyzyjnym cięciu wodą najwyższej jakości. Nowoczesne centrum OMAX 80X z głowicą Tilt-A-Jet™.</p>
+      <a href={`${base}kontakt/`} class="btn btn-gold">Skontaktuj się z nami</a>
+    </div>
+  </section>
+
+  <!-- O firmie -->
+  <section class="section">
+    <div class="container">
+      <h2>Poznaj naszą firmę</h2>
+      <p class="subtitle">W High Pres & Mach stawiamy na jakość, innowacyjność i kompleksową obsługę naszych klientów.</p>
+
+      <div class="two-col">
+        <div>
+          <h3>Historia High Pres & Mach</h3>
+          <p>Jesteśmy nowoczesną firmą, która z pasją realizuje projektowanie i cięcie materiałów od kilkunastu lat. Efektem wspólnych działań jest najnowocześniejsze Centrum Obrócze OMAX 80X Jet Machining Center Intelli TRAX wyposażone w głowice Tilt-A-Jet™ oraz Bevel Head, które umożliwia zrealizowanie najbardziej niekonwencjonalnych projektów.</p>
+          <p style="margin-top:12px">Dzięki naszemu doświadczeniu zyskaliśmy zaufanie lokalnych i krajowych klientów.</p>
+          <br />
+          <a href={`${base}technologia/`} class="btn">Poznaj naszą technologię</a>
+        </div>
+        <img src={`${base}images/baner2.jpg`} alt="Centrum obróbki wodą HIGH PRES & MACH" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Dlaczego warto -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Dlaczego warto wybrać High Pres & Mach?</h2>
+      <p class="subtitle">Nowoczesne technologie, precyzja wykonania i pełne wsparcie na każdym etapie.</p>
+
+      <div class="features-grid">
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>Innowacyjność</h3>
+          <p>Wykorzystujemy nowoczesne technologie, aby zapewnić najwyższą jakość obróbki metalu. Nasze centrum OMAX 80X to jedna z najnowocześniejszych maszyn w Małopolsce.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Precyzja</h3>
+          <p>Nasze cięcie wodą gwarantuje doskonałe wykończenie i minimalne straty materiału. Tolerancja wykonania: 0,1 mm/1000 mm cięcia, 5 klas jakości.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Wsparcie</h3>
+          <p>Oferujemy pełne doradztwo oraz pomoc na każdym etapie realizacji projektu — od wyceny po dostawę gotowych elementów.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usługi w skrócie -->
+  <section class="section">
+    <div class="container">
+      <h2>Nasze usługi</h2>
+      <p class="subtitle">Kompleksowe cięcie wodą — od prostych detali po skomplikowane projekty 3D.</p>
+
+      <div class="two-col two-col-reverse">
+        <div>
+          <ul class="check-list">
+            <li><strong>Cięcie 3D</strong> — fazowanie, wycinanie stożków do kąta 59°</li>
+            <li><strong>Cięcie 2D</strong> — każdy kształt płaski</li>
+            <li><strong>Cięcie wzdłużne, nadcinanie, wykrawanie</strong></li>
+            <li><strong>Wycinanie kół zębatych</strong> i wykonywanie otworów (od Ø 0,9 mm)</li>
+            <li><strong>Grawerowanie i trasowanie</strong> napisów w najtwardszych materiałach</li>
+            <li>Stół roboczy: <strong>4,2 m × 2 m</strong>, do grubości <strong>200 mm</strong></li>
+          </ul>
+          <br />
+          <a href={`${base}uslugi/`} class="btn">Zobacz wszystkie usługi</a>
+        </div>
+        <img src={`${base}images/macro-focus-cogwheel-gear-159275.jpeg`} alt="Precyzyjne cięcie metalu wodą" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie CTA -->
+  <section class="section section-alt">
+    <div class="container" style="text-align:center">
+      <h2>Zobacz nasze realizacje</h2>
+      <p class="subtitle">Setki zrealizowanych projektów — od rozet dekoracyjnych po skomplikowane elementy konstrukcyjne.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px">
+        <a href={`${base}realizacje-2d/`} class="btn">Realizacje 2D</a>
+        <a href={`${base}realizacje-3d/`} class="btn">Realizacje 3D</a>
+        <a href={`${base}rozety/`} class="btn btn-gold">Rozety</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt CTA -->
+  <section class="section section-dark" style="text-align:center">
+    <div class="container">
+      <h2>Potrzebujesz wyceny?</h2>
+      <p class="subtitle">Skontaktuj się z nami — wycenimy Twój projekt bezpłatnie!</p>
+      <a href={`${base}wyceny/`} class="btn btn-gold" style="margin-top:10px">Zamów wycenę</a>
+    </div>
+  </section>
+</BaseLayout>
